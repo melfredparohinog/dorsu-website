@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="light" id="darkmode">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="logo.png" type="image/x-icon" >
+    <title>Davao Oriental State University</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+    <style>
+        @keyframes fade{
+            0%{opacity: 0%;}
+            100%{opacity: 100%;}
+        }
+        *{
+            animation: fade 1.5s ease;
+        }
+        .bgimage{
+            background-image: url(images/dorsu.jpg);
+            background-size: cover;
+            box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.40);
+        }
+        .toptext{
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+        }
+        
+        @media screen and (max-width:800px){
+            #check:checked ~ nav ul{
+                display: block;
+            }
+            
+        }
+        
+        
+    </style>
+</head>
+<body class="p-0 m-0 box-border dark:bg-slate-900">
+    
+
+    <header class="  text-center toptext" id="top">
+        <nav class="flex  dark:bg-slate-800">
+            <ul class=" flex place-content-left items-center md:mx-10 md:my-0 my-5">
+                <li><img src="logo.png" alt="" class="w-24 h-w4 flex"></li>
+                <li class="text-base text-blue-700 lg:text-2xl dark:text-slate-200">DAVAO ORIENTAL STATE UNIVERSITY
+                    <br><span class="md:text-base text-sm">Guang-guang, Dahican, City of Mati, 8200 Davao Oriental, Philippines</span>
+                </li>
+            </ul>
+            <ul class=" md:mx-8 md:flex md:items-center md:w-2/5 dark:text-slate-200 md:justify-center md:text-2xl md:text-blue-600 hidden">
+                <li><a href="https://www.facebook.com/dorsuofficial" class="px-5 hover:text-3xl"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://mobile.twitter.com/dorsuofficial" class="px-5 hover:text-3xl"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="" class="px-5 hover:text-3xl"><i class="fa fa-phone"></i></a></li>
+                <li>
+                </li>
+        
+                <li><label class="relative block  px-5">
+                    <span class="sr-only">Search</span>
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                      <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+                    </span>
+                    <input class="placeholder:italic placeholder:text-slate-400 dark:text-slate-900 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                  </label></li>
+                
+            </ul>
+        </nav>
+    </header>
+        <div class="mx-auto text-center bg-blue-900 dark:bg-slate-900 text-white dark:text-yellow-300 leading-[60px] ">
+            
+            <input type="checkbox" id="check" class="hidden">
+            <ul class="md:hidden flex mx-10 place-content-center items-center">
+                <label for="check" class="checkbtn md:hidden flex text-2xl">
+                    <i class="fa fa-bars mx-5 "></i>
+                    </label>
+                <li><a href="https://www.facebook.com/dorsuofficial" class="px-5 hover:text-yellow-400 text-2xl"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://mobile.twitter.com/dorsuofficial" class="px-5 hover:text-yellow-400 text-2xl"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="" class="px-5 hover:text-yellow-400 text-2xl"><i class="fa fa-phone"></i></a></li>
+            </ul>
+            
+            <nav >
+            <ul class="md:flex md:text-xs md:w-screen  dark:bg-slate-900 hidden text-sm md:h-full h-screen justify-center md:bg-blue-900 bg-slate-800  text-white w3-animate-left py-5 " >
+                <li class=" py-1.5"><a href="#" class=" w3-button rounded-lg ">HOME</a></li>
+    
+                <li class=" py-1.5 w3-dropdown-hover">
+                    <a href="#"><button class="w3-button rounded-lg ">ABOUT <i class="fa fa-caret-down"></i></button></a>
+                    <div class="w3-dropdown-content w3-bar-block rounded-lg">
+                        <a href="#history" class="w3-bar-item w3-button rounded-lg">History</a>
+                        <a href="#vision" class="w3-bar-item w3-button rounded-lg">Vision, Mission, Goals, Values</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Administration</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Board of Regents</a>
+                    </div>
+                </li>
+                <br class="md:hidden block">
+                <li class=" py-1.5 w3-dropdown-hover">
+                    <a href="#"><button class="w3-button  rounded-lg ">ACADEMICS <i class="fa fa-caret-down"></i></button></a>
+                    <div class="w3-dropdown-content w3-bar-block rounded-lg">
+                        <a href="#institutes" class="w3-bar-item w3-button rounded-lg">Academic Units</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Extension Campus</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Graduate School</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">University Registrar</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Pre-school</a>
+                    </div>
+                </li>
+                <br class="md:hidden block">
+                <li class=" py-1.5 w3-dropdown-hover">
+                    <a href="#"><button class="w3-button  rounded-lg ">RESEARCH <i class="fa fa-caret-down"></i></button></a>
+                    <div class="w3-dropdown-content w3-bar-block rounded-lg">
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Researches</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Extension Programs</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Davao Research Journal</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">IPTBM</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">International Relations</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Linkages</a>
+                    </div>
+                </li>
+                <br class="md:hidden block">
+                <li class=" py-1.5 w3-dropdown-hover">
+                    <a href="#"><button class="w3-button  rounded-lg">STUDENTS <i class="fa fa-caret-down"></i></button></a>
+                    <div class="w3-dropdown-content w3-bar-block rounded-lg">
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Student Services</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">USC</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Student Publication</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">ULIRC</a>
+                    </div>
+                </li>
+                <br class="md:hidden block">
+                <li class=" py-1.5 w3-dropdown-hover">
+                    <a href="#"><button class="w3-button  rounded-lg ">RESOURCE <i class="fa fa-caret-down"></i></button></a>
+                    <div class="w3-dropdown-content w3-bar-block rounded-lg">
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Alumni Tracer</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Grades Portal</a>
+                    </div>
+                </li>
+                <br class="md:hidden block">
+                <li class=" py-1.5 w3-dropdown-hover">
+                    <a href="#"><button class="w3-button  rounded-lg ">ADMISSIONS <i class="fa fa-caret-down"></i></button></a>
+                    <div class="w3-dropdown-content w3-bar-block rounded-lg">
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Admission Requirements</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Scholarships (FASST)</a>
+                    </div>
+                </li> <br class="md:hidden block">
+                <li class=" py-1.5 w3-dropdown-hover">
+                    <a href="#"><button class="w3-button rounded-lg ">GRADE INQUIRY <i class="fa fa-caret-down"></i></button></a>
+                    <div class="w3-dropdown-content w3-bar-block rounded-lg">
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Grade Inquiry 2</a>
+                        <a href="#" class="w3-bar-item w3-button rounded-lg">Grade Inquiry 3</a>
+                    </div>
+                </li>
+                <li>
+                    <br class="md:hidden block">
+                    <br class="md:hidden block">
+                    <br class="md:hidden block">
+                    <button class="rounded-full duration-500 " id="btn">
+
+                    <span class="sun" id="sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            strokeWidth={1.5} stroke="currentColor" className="scale-100" height="45"
+                            width="45">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                        </svg>
+                    </span>
+
+                    <span class="hidden" id="moon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="scale-100" height="45"
+                            width="45">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                        </svg>
+                    </span>
+
+                </button>
+                </li>
+                
+                
+                
+            </ul>
+            </nav>
+        </div>
+       
+        <div class="h-screen w-full dark:bg-slate-900 bg-gradient-to-r from-white-900 ">
+            
+            <div class="bgimage h-9/10 w-full ">
+                <div class="w-full h-screen md:pt-[100px] pt-[120px] mx-auto text-center ">
+                    <div class="text-white md:text-[20px] text-[15px]" >Welcome to</div>
+                    <div class="md:text-[90px] text-white font-bold md:tracking-[10px] text-[50px] tracking-[2px]">DORSU
+                    </div>
+                    <div class="leading-10 pt-[25px]">
+                        <button class="border-2 rounded-full px-10 text-white hover:bg-white hover:text-blue-900 font-semibold font-sans hover:px-[70px] px-[50px] tracking-[2px]"><a href="#explore">EXPLORE</a></button>
+                        <button class="border-2 rounded-full px-10 text-white hover:bg-white hover:text-blue-900 font-semibold font-sans hover:px-[70px] tracking-[2px] mt-5"><a href="#learnmore">LEARN MORE</a></button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <section class="dark:bg-slate-900">
+
+            <div class="container mt-20 pb-2 px-20 mx-auto my-auto">
+                <h1 id="explore"
+                    class="text-center text-3xl font-bold  decoration-blue-400 text-slate-900 dark:text-white dark:decoration-yellow-300">
+                    DAVAO ORIENTAL STATE UNIVERSITY <span class="text-blue-500 dark:text-blue-300">NEWS AND EVENTS</h1>
+            </div>
+    
+    
+    
+    
+            <div class="container m-auto my-10 p-2">
+    
+    
+                <div class="lg:flex">
+                    <div
+                        class="text-justify lg:flex font-sans bg-gray-100 mx-5 my-5 rounded transition duration-300 shadow hover:shadow-sky-600/80 dark:bg-slate-800">
+                        <div class="flex-none lg:w-48">
+                            <img src="images/news1.jpg" alt=""
+                                class="rounded-t-lg lg:rounded-l w-full h-full object-cover" />
+                        </div>
+                        <div class="flex-auto p-6">
+                            <div class="flex flex-wrap">
+                                <h1 class="flex-auto text-lg font-semibold text-slate-900 dark:text-white"><a href="#"
+                                        target="_blank"
+                                        class="hover:underline hover:decoration-sky-400 dark:hover:underline dark:hover:decoration-sky-300/50 ">
+                                        DOrSU, OCVM sign MOA for Educational Assistance Program</a>
+                                </h1>
+                                <div class="text-sm text-slate-500 my-2">
+                                    SEPTEMBER 20, 2022
+                                </div>
+                            </div>
+    
+    
+                            <p class="text-sm text-slate-700 dark:text-slate-300">
+                                Dr. Roy G. Ponce, President of DorSU, and Vice Mayor Lorenzo Leon G. Rabat, representing the Office of the City Vice Mayor (OCVM), signed a Memorandum of Agreement (MOA) for the “Ka-asENZO” Thesis Educational Assistance...
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="text-justify lg:flex font-sans bg-gray-100 mx-5 my-5 rounded transition duration-300 shadow hover:shadow-sky-600/80 dark:bg-slate-800">
+                        <div class="flex-none lg:w-48">
+                            <img src="images/news2.jpg" alt=""
+                                class="rounded-t-lg lg:rounded-l w-full h-full object-cover" />
+                        </div>
+                        <div class="flex-auto p-6">
+                            <div class="flex flex-wrap">
+                                <h1 class="flex-auto text-lg font-semibold text-slate-900 dark:text-white"><a href="#"
+                                        target="_blank"
+                                        class="hover:underline hover:decoration-sky-400 dark:hover:underline dark:hover:decoration-sky-300/50 ">
+                                        DOrSU Management meets for QMS Review</a>
+                                </h1>
+                                <div class="text-sm text-slate-500 my-2">
+                                    SEPTEMBER 19, 2022
+                                </div>
+                            </div>
+    
+    
+                            <p class="text-sm text-slate-700 dark:text-slate-300">
+                                The top management of Davao Oriental State University met today, September 19, 2022, at the DOrSU Boardroom, for the first Management Review to consider possible improvements, effectiveness, adequacy of the current Quality Management System...
+
+
+    
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="lg:flex">
+                    <div
+                        class="text-justify lg:flex font-sans bg-gray-100 mx-5 my-5 rounded transition duration-300 shadow hover:shadow-sky-600/80 dark:bg-slate-800">
+                        <div class="flex-none lg:w-48">
+                            <img src="images/news3.jpg" alt=""
+                                class="rounded-t-lg lg:rounded-l w-full h-full object-cover" />
+                        </div>
+                        <div class="flex-auto p-6">
+                            <div class="flex flex-wrap">
+                                <h1 class="flex-auto text-lg font-semibold text-slate-900 dark:text-white"><a href="#"
+                                        target="_blank"
+                                        class="hover:underline hover:decoration-sky-400 dark:hover:underline dark:hover:decoration-sky-300/50 ">
+                                        DOrSU employees trained to respond to emergencies</a>
+                                </h1>
+                                <div class="text-sm text-slate-500 my-2">
+                                    SEPTEMBER 18, 2022
+                                </div>
+                            </div>
+    
+    
+                            <p class="text-sm text-slate-700 dark:text-slate-300">
+                                Selected staff and faculty of Davao Oriental State University(DOrSU) received training from the City Disaster Risk Reduction and Management Office (CDRRMO), City of Mati, to prepare them for emergencies that might arise at work,...
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="text-justify lg:flex font-sans bg-gray-100 mx-5 my-5 rounded transition duration-300 shadow hover:shadow-sky-600/80 dark:bg-slate-800">
+                        <div class="flex-none lg:w-48">
+                            <img src="images/news4.jpg" alt=""
+                                class="rounded-t-lg lg:rounded-l w-full h-full object-cover" />
+                        </div>
+                        <div class="flex-auto p-6">
+                            <div class="flex flex-wrap">
+                                <h1 class="flex-auto text-lg font-semibold text-slate-900 dark:text-white"><a href="#"
+                                        target="_blank"
+                                        class="hover:underline hover:decoration-sky-400 dark:hover:underline dark:hover:decoration-sky-300/50 ">
+                                        US Pediatricians, DOrSU work toward reducing maternal, newborn mortality</a>
+                                </h1>
+                                <div class="text-sm text-slate-500 my-2">
+                                    SEPTEMBER 14, 2022
+                                </div>
+                            </div>
+    
+    
+                            <p class="text-sm text-slate-700 dark:text-slate-300">
+                                Pediatricians from Johns Hopkins University and the Institute of Nursing and Allied Health Sciences (INAHS) conducted a two-day training from September 13 to 14, 2022, at the university library for midwives, nurses, and nursing...
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+    
+    
+            </div>
+    
+    
+            <div class="mx-10">
+                <div class="container mx-auto my-20 border-b-2 border-slate-400 w-full"></div>
+            </div>
+            <div id="history">
+                <h1 
+                    class="text-center text-3xl font-bold  decoration-blue-400 text-slate-900 dark:text-white dark:decoration-yellow-300">
+                    DAVAO ORIENTAL STATE UNIVERSITY <span class="text-blue-500 dark:text-blue-300">HISTORY</h1>
+                        <br>
+                        <div class="md:mx-[100px] mx-[50px] text-justify dark:bg-slate-900">
+                            <p class="md:px-[70px] px-[30px]text-sm dark:text-slate-400 text-slate-600"><br><br>Davao Oriental State University (DOrSU) was established through Republic Act No. 11033, signed into law by President Rodrigo Roa Duterte at the Malacañang Palace on May 28, 2018. Its conversion is an end-product of House Bill 7007 authored by Congress Representative Joel Mayo Z. Almario and Senate Bill 1617 filed by Senator Joel E. Villanueva. President Emeritus Edito B. Sumile successfully paved the groundwork for the University conversion and was sustained by his successor, Dr. Roy G. Ponce, later named the first University President. Also instrumental to the success of the conversion process is the forward-looking initiative of Hon. Thelma Z. Almario and the dynamic leadership of the Commission on Higher Education (CHED) under Chairperson Julian Prospero E. De Vera III and Commissioner Aldrin A. Darilag, Presiding Chair of the DOrSU Board of Regents, as well as the Committee on Higher and Technical Education (CHTE) chaired by Hon. Mark O. Go.
+
+                                At the frontline of this historical turning point are the concerted efforts of the University Conversion Technical Working Team in coordination with CHED Regional Office XI spearheaded by Director Maricar R. Casquejo, together with all University faculty, staff, students, Local Government Units (LGUs), and other stakeholders that incessantly worked to comply with the Enrollment and Program Offerings, Faculty Requirements, Research Capability, Learning Resources and Support Structures, and Linkages and Outreach. Their efforts are influential to the CHED Commission En Banc’s (CEB) issuance of Resolution No. 293-2021 dated May 26, 2021, certifying DOrSU’s full compliance to university standards.
+                                
+                                With the conversion, the University envisions continually taking part in nation-building by offering advanced technological instruction and pursuing cutting-edge research, extension, and production programs in various fields of science and technology. It played a valuable role in producing professionals and experts who contributed to the advancement of the Davao Region and beyond. Its charter mandates offering of undergraduate, graduate, and postgraduate programs in agriculture and environmental studies, pure and applied sciences, behavioral and social sciences, law, culture and arts, tourism, business, nautical science and maritime transportation, industrial technology, engineering, education and teacher training, communication and information technology, health sciences, developmental management and leadership, and other areas of specialization.
+                                
+                                The University’s rich history dates back to 1972 as a Mati Community College (MCC) founded by the then Mati Municipal Mayor Thelma Z. Almario with the Founding Dean of College, Dr. Leopoldo Bravo. With the goal to expand its operation and provide more opportunities to the residents of Davao Oriental and its neighboring provinces, it was converted into Davao Oriental State College of Science and Technology (DOSCST), established on December 13, 1989, by virtue of Republic Act No. 6807. The said conversion was proactively advanced by Hon. Thelma Z. Almario during her tenure as the 2nd Congressional District Representative of Davao Oriental. In 1991, the College transferred to its present 10-hectare campus in Guang-Guang, Dahican, City of Mati, donated by the heirs of Don Jose Corro Martinez. Later, the University expanded services across the Province of Davao Oriental. Campuses were established in San Isidro through the efforts of Hon. Justina MB Yu in November 1997, Cateel under the headship of Hon. Camilo T. Nuñez in June 1999, and Banaybanay founded by Hon. Adalia C. Lopez in June 2015.
+                                
+                                The University remains true to its vision of promoting excellence, innovation, and inclusion as a premier institution in the easternmost part of the Philippines. It forefronts the advancement of sustainable development, regenerative science, and future-proofing in all academic disciplines, being an academic steward of world-renowned natural heritage, such as the Mt. Hamiguitan Range Wildlife Sanctuary (MHRWS), the only World Heritage Site in Mindanao inscribed by the United Nations Educational, Scientific, and Cultural Organization (UNESCO), and the Pujada and Mayo Bays listed as the Most Beautiful Bays of the World (MBBW). DOrSU embodies the hopes and aspirations of its founders, leaders, constituents, and the local and indigenous communities that it serves.
+                                
+                                <br><br><br>Written by: Jhonnel P. Villegas | Date: October 13, 2021<br><br></p>
+                        </div>
+            </div>
+            <div class="mx-10">
+                <div class="container mx-auto my-20 border-b-2 border-slate-400 w-full"></div>
+            </div>
+                <div id="vision" class="text-justify md:mx-[100px]  text-slate-600 dark:text-slate-400 ">
+                    <h1 
+                    class="text-center text-3xl font-bold  decoration-blue-400 text-slate-900 dark:text-white dark:decoration-yellow-300">
+                    DAVAO ORIENTAL STATE UNIVERSITY <span class="text-blue-500 dark:text-blue-300"><br>VISION, MISSION, GOALS, VALUES</h1>
+                        <br>
+                        <div class="mx-[50px]"><h1 class="text-blue-600 font-bold">VISION</h1>
+                            <p class="">
+                            A university of excellence, innovation and inclusion.</p>
+                        </div><br>
+                        <div class="mx-[50px]"><h1 class="text-blue-600 font-bold">MISSION</h1>
+                            <ul class="">
+                                <li >To elevate knowledge generation, utilization and distribution.</li>
+                                <li >To promote inclusive sustainable development through research-based higher quality education, technical-vocational skills, responsive to the needs of local and global community; and</li>
+                                <li >To produce holistic, creative, and inclusive human resource who are responsive and resilient to global challenges while maintaining strong sense of nationhood.</li>
+                            </ul>
+                        </div><br>
+                        <div class="mx-[50px]"><h1 class="text-blue-600 font-bold">CORE VALUES</h1>
+                            <p>
+                                God-centeredness and humaneness<br>
+
+                                Critical Thinking and Creativity<br>
+                                
+                                Discipline and Competence<br>
+                                
+                                Commitment and Collaboration<br>
+                                
+                                Resilience and Sustainability</p>
+                        </div><br>   
+                        <div class="mx-[50px]"><h1 class="text-blue-600 font-bold">QUALITY POLICY</h1>
+                            <p>
+                                DAVAO ORIENTAL STATE COLLEGE OF SCIENCE AND TECHNOLOGY is an educational institution <br>established and sustained by quality education. It seeks to successfully implement and<br> improve its Quality Management System (QMS) in order to better serve its students and the community, <br>further contributing to nation building.
+
+                                To sustain this culture of quality, DOSCST is committed to: <br> <br>
+                                Deliver only quality education, research and extension to its stakeholders;
+                                Offer relevant and value-adding programs that are fit to the industry needs of the country;
+                                <br>Sustain a conductive environment for learning, research and extension through continuous training of its workforce and by making available sufficient facilities and other infrastructure;
+                                <br>Comply with all applicable legal requirements and other regulations it is obliged to adhere to;
+                                Serve its stakeholders better by implementing value-adding improvements using different tools such as Risk Management and 5S; and
+                                <br>Transfer organizational knowledge to other institutions that will benefit from DOSCST’s expertise in implementing a QMS.
+                            </p>
+                        </div>
+                </div>
+                        
+            <div class="mx-10">
+                <div class="container mx-auto my-20 border-b-2 border-slate-400 w-full"></div>
+            </div>
+            <h1    id="institutes"
+                    class="text-center text-3xl font-bold  decoration-blue-400 text-slate-900 dark:text-white dark:decoration-yellow-300">
+                    DAVAO ORIENTAL STATE UNIVERSITY <span class="text-blue-500 dark:text-blue-300">INSTITUTES</h1>
+                        <br>
+            <div class="container mx-auto my-auto p-5 md:flex md:bg-slate-200 dark:bg-white/0 bg-white/0">
+
+                <a href="https://www.facebook.com/ials.dean/?fbclid=IwAR3ou8FfybhzvaoS3PaqvqgFxAzqTfr3-hXemt-snosLZW6b3yWN6COMLSI" target="_blank"><img class="m-auto p-5 md:w-full md:h-full object-cover" src="images/ials.png" alt="" srcset=""></a>
+                <a href="https://www.facebook.com/people/Dorsu-Ibpa/100070858823312/?fbclid=IwAR2MPKg2UOeUw0LJRLsqPtdyw3uKdwqqXO8zAC91kKoiUtgbCttWeOZhAtA" target="_blank"><img class="m-auto p-5 md:w-full md:h-full object-cover" src="images/ibpa.png" alt="" srcset=""></a>
+                <a href="https://www.facebook.com/DOrSUice?fbclid=IwAR2_HrVtBGnZdtXAW6-oDi2dJabXciKEKp_k226BKObmXuKG_ZSRTf34ZLk&amp;_rdc=1&amp;_rdr" target="_blank"><img class="m-auto p-5 md:w-full md:h-full object-cover" src="images/ice.png" alt="" srcset=""></a>
+                <a href="https://www.facebook.com/IETTofficial?fbclid=IwAR2lBmDEa24Or_nDUfIkDpfbEiGUmPdLVbnYlf9Cywu4oB1okMpsla1bpdE" target="_blank"><img class="m-auto p-5 md:w-full md:h-full object-cover" src="images/iett.png" alt="" srcset=""></a>
+                <a href="https://www.facebook.com/INAHS.Official" target="_blank"><img class="m-auto p-5 md:w-full md:h-full object-cover" src="images/inahs.png" alt="" srcset=""></a>
+
+            </div>
+            <div class="mx-10">
+                <div class="container mx-auto my-20 border-b-2 border-slate-400 w-full"></div>
+            </div>
+            <div class="container mx-auto my-auto p-10 md:flex md:bg-slate-200 dark:bg-white/0 bg-white/0">
+
+                <span class="inline m-auto"><img class=" p-5 w-full sm:h-full object-cover" src="images/info-magazine.jpg" alt="" srcset=""></span>
+                <span class="inline m-auto"><img class=" p-5 w-full sm:h-full object-cover" src="images/career.png" alt="" srcset=""></span>
+                <span class="inline m-auto"><img class=" p-5 w-full sm:h-full object-cover" src="images/esip.png" alt="" srcset=""></span>
+                <span class="inline m-auto"><img class=" p-5 w-full sm:h-full object-cover" src="images/freedom.png" alt="" srcset=""></span>
+                <span class="inline m-auto"><img class=" p-5 w-full sm:h-full object-cover" src="images/open-data.png" alt="" srcset=""></span>
+                <span class="inline m-auto"><img class=" p-5 w-full sm:h-full object-cover" src="images/philippine.png" alt="" srcset=""></span>
+            </div>
+            <div class="mx-10">
+                <div class="container mx-auto my-20 border-b-2 border-slate-400 w-full"></div>
+            </div>
+            
+    <footer id="learnmore">
+        <div class="md:flex block text-center bg-slate-200 dark:bg-slate-200/0 mx-[50px] py-[50px]">
+            <nav class="md:w-[50%] w-full">
+                <ul class="text-slate-500 leading-10 "> <span class="text-2xl font-bold text-blue-600">CAMPUSES</span><br>
+                    <li><a href="https://dorsu.edu.ph/bec/" class="hover:text-blue-700 ">BANAYBANAY CAMPUS</a></li>
+                    <li><a href="https://dorsu.edu.ph/cec/" class="hover:text-blue-700 ">CATEEL CAMPUS</a></li>
+                    <li><a href="https://dorsu.edu.ph/siec/" class="hover:text-blue-700 ">SAN ISIDRO CAMPUS</a></li>
+                </ul>
+            </nav>
+            <br class="md:hidden block">
+            <nav class="md:w-[50%] w-full">
+                <ul class="text-slate-500 leading-10"> <span class="text-2xl font-bold text-blue-600">ARCHIVES</span><br>
+                    <li><a href="https://dorsu.edu.ph/2022/09/" class="hover:text-blue-700 ">September 2022 (4)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2022/08/" class="hover:text-blue-700 ">August 2022 (3)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2022/07/" class="hover:text-blue-700 ">July 2022 (8)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2022/06/" class="hover:text-blue-700 ">June 2022 (16)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2022/05/" class="hover:text-blue-700 ">May 2022 (9)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2022/04/" class="hover:text-blue-700 ">April 2022 (8)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2022/05/" class="hover:text-blue-700 ">February 2022 (10)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2022/01/" class="hover:text-blue-700 ">January 2022 (1)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2021/11/" class="hover:text-blue-700 ">November 2021 (4)</a></li>
+                    <li><a href="https://dorsu.edu.ph/2021/10/" class="hover:text-blue-700 ">October 2021 (6)</a></li>
+        
+                </ul>
+            </nav>
+        </div>
+        <div class="mx-10">
+            <div class="container mx-auto my-20 border-b-2 border-slate-400 w-full"></div>
+        </div>
+        <button class="w-full text-3xl"><a href="#top"><i class="fa fa-caret-up bg-slate-500 rounded-full px-[20px]"></i></a>
+        </button>
+        <br><br>
+        <div class="text-center">
+            <div><h3 class="text-blue-600 font-bold text-2xl">CONTACT US</h3></div>
+            <div class="dark:text-slate-400 text-slate-600 text-3xl "><br>
+                <a href="https://www.facebook.com/dorsuofficial"><i class="fa fa-facebook mx-2 hover:text-yellow-400"></i></a>
+                <a href="https://mobile.twitter.com/dorsuofficial"><i class="fa fa-twitter mx-2 hover:text-yellow-400"></i></a>
+                <a href=""><i class="fa fa-phone mx-2 hover:text-yellow-400"></i></a>
+            </div>
+        </div>
+        <div class="mx-10">
+            <div class="container mx-auto my-20 border-b-2 border-slate-400 w-full"></div>
+        </div>
+        <div class="text-center text-blue-600 md:font-bold dark:text-white">
+            Davao Oriental State University © 2022. All Rights Reserved.
+        </div>
+        <br>
+    </footer>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+</body>
+</html>
